@@ -71,7 +71,7 @@
 		// A font can be specified here if its files are available.
 		font: {
 		  family: 'Sylfaen',
-		  source: ['./font/Sylfaen.ttf']
+		  source: ['../font/Sylfaen.ttf']
 		}
       },
 	  filename:'https://github.com/dotland/mnemonic-kb-hy/releases/latest/download/HYM.js'
