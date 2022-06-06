@@ -1,0 +1,45 @@
+  body {
+	font-family: Sylfaen,Tahoma,helvetica;
+	font-size: 1em;
+  }
+  h4 {
+	font-weight: normal;
+	color: #3D4849;
+	margin-bottom: 4px
+  }
+  h2 {
+	color: #36454F;
+  }
+  h3 {
+	font-size: 1em;
+	color: #53565B;
+  }
+  kbd {
+	background-color: #eee;
+	border-radius: 3px;
+	border: 1px solid #b4b4b4;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .2), 0 2px 0 0 rgba(255, 255, 255, .7) inset;
+	color: #333;
+	display: inline-block;
+	font-size: 1.15em;
+	font-weight: 700;
+	font-style: normal;
+	line-height: 1;
+	padding: 2px 4px;
+	white-space: nowrap;
+  }
+  .test {
+	font-size: 1.5em;
+	width: 80%;
+	min-height: 30px;
+	border: 1px solid gray;
+  }
+  .info {
+	font-style: oblique;
+	font-size: 0.9em;
+	color: #999FA8;
+  }
+  #KeymanWebControl {
+	width: 50%;
+	min-width: 600px;
+  }
