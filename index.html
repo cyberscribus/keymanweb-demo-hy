@@ -13,8 +13,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" /> 
       
     <title>KeymanWeb նմուշ վեբ-էջ</title>
-	  
-    <link href="./style/style.css" rel="stylesheet" type="text/css" />
+	
+    <link href="./style/main.css" rel="stylesheet" type="text/css" />
  
     <!-- KeymanWeb script --> 
     <script src="https://s.keyman.com/kmw/engine/14.0.293/keymanweb.js"></script>
@@ -30,23 +30,24 @@
  
     <!-- Initialization: set paths to keyboards, resources and fonts as required -->
     <script>
-      var kmw=window.keyman;
-      kmw.init({
-        attachType:'auto',
-        resources:''
-      }).then(function() {
-        loadKeyboards();
-      });
+	  
     </script>
 
     <!-- Add keyboard management script for local selection of keyboards to use -->
-    <script src="./js/util.js"></script> 
+    <script src="./js/main.js"></script> 
   
   </head>
 
   <!-- Sample page HTML -->  
-  <body> 
-    <h2>KeymanWeb նմուշ վեբ-էջ</h2>
+  <body  onload="SetupDocument()"> 
+    <div id="character-grid" class="cursor">
+	  <div class="">
+	    <div class="char-char keymanweb-font">-</div>
+		<div class="char-code">empty</div>
+	  </div>
+	</div>
+	
+    <h2><a href="https://keymanweb.com/">KeymanWeb</a> վեբ-էջի նմուշ</h2>
 
     <div>
     <!-- 
@@ -55,14 +56,13 @@
       (It is ignored by other User Interfaces.)
     -->
     <div id='KeymanWebControl'></div>                                                                                   
-
+	
     <h4>Մուտքագրեք ընտրված լեզվով այս տեքստային տարածքում.</h4>
     <textarea id='ta1' class='test' placeholder='Մուտքագրեք այստեղ'></textarea>
   
     <h4>կամ այս մուտքագրման դաշտում.</h4>
-    <input class='test' value='' placeholder='կամ այստեղ'/>
+    <input id="i1" class='test' value='' placeholder='կամ այստեղ'/>
     
-	<br />
 	<br />
 	<br />
 	
@@ -70,27 +70,28 @@
 	  «<a href="https://github.com/dotland/mnemonic-kb-hy/blob/main/README.md">Armenian Mnemonic</a>» ստեղնաշարն ունի կցագրեր մուտքագրելու հատկություն: Այն կարելի միացնել կամ անջատել
 	  <ul>
 	    <li>
-		  <b>ե ւ</b> կից տառերի զույգի համար՝ մուտքագրելով &nbsp; <b style="font-style: normal;">√ւ</b> ,
+		  <b>ե ւ</b> կից տառերի զույգի համար՝ մուտքագրելով &nbsp; <b class="normstyle">√ւ</b> &nbsp;(այսինքն՝&nbsp; <kbd>AltGr</kbd><span class="normstyle">+</span><kbd>V</kbd>&nbsp;&nbsp;<kbd>W</kbd>),
 		</li>
+		<br />
 		<li>
-		  <b>մ ն, մ ե, մ ի, վ ն, մ խ</b> կից տառերի զույգերի համար՝ մուտքագրելով &nbsp; <b style="font-style: normal;">√մ</b> ։
+		  <b>մ ն, մ ե, մ ի, վ ն, մ խ</b> կից տառերի զույգերի համար՝ մուտքագրելով &nbsp; <b class="normstyle">√մ</b> &nbsp;(այսինքն՝&nbsp; <kbd>AltGr</kbd><span class="normstyle">+</span><kbd>V</kbd>&nbsp;&nbsp;<kbd>M</kbd>)։
 		</li>
 	  <ul>
 	</div>
-	
 	<br />
+	
     <!--  The following elements show how the language menu can be dynamically extended at any time -->
 	<h3><a href="https://keyman.com/developer/keymanweb/keyboards">Այս կատալոգում</a> թվարկված են Keyman Cloud-ում առկա բոլոր ստեղնաշարերը:</h3>
 	
-    <h4>Ավելացրեք ստեղնաշար ստեղնաշարի անվանումով.</h4>
+    <h4>Ավելացրեք ստեղնաշար՝ ստեղնաշարի անվանումով.</h4>
     <input type='input' id='kbd_id1' class='kmw-disabled' onkeypress="clickOnEnter(event,1);"/>
     <input type='button' id='btn1' onclick='addKeyboard(1);' value='Add' />
  
-    <h4>Ավելացրեք ստեղնաշար BCP-47 լեզվի կոդով.</h4>
+    <h4>Ավելացրեք ստեղնաշար՝ BCP-47 լեզվի կոդով.</h4>
     <input type='input' id='kbd_id2' class='kmw-disabled' onkeypress="clickOnEnter(event,2);"/>
     <input type='button' id='btn2' onclick='addKeyboard(2);' value='Add' />
 
-    <h4>Ավելացրեք ստեղնաշար լեզվի անվանումով.</h4>
+    <h4>Ավելացրեք ստեղնաշար՝ լեզվի անվանումով.</h4>
     <input type='input' id='kbd_id3' class='kmw-disabled' onkeypress="clickOnEnter(event,3);"/>
     <input type='button' id='btn3' onclick='addKeyboard(3);' value='Add' />   
 
@@ -114,4 +115,3 @@
     ***   
   -->     
 </html>
-
