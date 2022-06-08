@@ -74,7 +74,7 @@
 		  source: ['./font/Sylfaen.ttf']
 		}
       },
-	  filename:'https://github.com/dotland/mnemonic-kb-hy/releases/latest/download/HYM.js'
+	  filename:'https://github.com/dotland/mnemonic-kb-hy/releases/latest/download/hym.js'
     });
 
     // The following two optional calls should be delayed until language menus are fully loaded:
