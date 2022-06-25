@@ -20,7 +20,11 @@ keyman.addKeyboards({
     languages: { 
         id: 'hy', 
         name: 'Armenian', 
-        region: 'Asia' 
+        region: 'Asia',
+        font: {
+		  family: 'Sylfaen',
+		  source: ['./font/Sylfaen.ttf']
+		}
     }, 
     filename: 'https://github.com/dotland/mnemonic-kb-hy/releases/latest/download/hym.js'
 });
