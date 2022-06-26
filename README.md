@@ -15,7 +15,7 @@ KeymanWeb-ի նախապայման ֆայլերը.
 
 ```js
 keyman.addKeyboards({
-    id: 'hym',
+    id: 'basic_kbdhym',
     name: 'Armenian Mnemonic',
     languages: { 
         id: 'hy', 
