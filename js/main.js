@@ -62,7 +62,7 @@
     
     // Add a fully-specified, locally-sourced, keyboard with custom font  
     kmw.addKeyboards({
-	  id: 'armenian_mnemonic',
+	  id: 'basic_kbdhym',
 	  name: 'Armenian Mnemonic',
 	  languages:{
 		id:	'hy',
