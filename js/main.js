@@ -69,6 +69,8 @@
 		name: 'Armenian',
 		region: 'Asia',
 		// A font can be specified here if its files are available.
+		// Windows includes a number of fonts which support the Armenian script such as
+		// Arial Unicode MS, Mshtakan, TITUS Cyberbit Basic, GHEA Mariam, Noto Serif Armenian
 		font: {
 		  family: 'Sylfaen',
 		  source: ['./font/Sylfaen.ttf']
