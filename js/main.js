@@ -62,10 +62,10 @@
     
     // Add a fully-specified, locally-sourced, keyboard with custom font  
     kmw.addKeyboards({
-	  id: 'basic_kbdhym',
+	  id: 'armenian_mnemonic',
 	  name: 'Armenian Mnemonic',
 	  languages:{
-		id:	'hy',
+		id: 'hy',
 		name: 'Armenian',
 		region: 'Asia',
 		// A font can be specified here if its files are available.
