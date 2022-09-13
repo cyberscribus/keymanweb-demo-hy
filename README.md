@@ -1,6 +1,6 @@
 ## KeymanWeb հայկական մնեմոնիկ ստեղնաշարի համար
 
-&nbsp;&nbsp;&nbsp;&nbsp;Սա վեբ-էջի մի նմուշ է հայկական մնեմոնիկ ստեղնաշարը ցուցադրելու համար: Այս վեբ էջը հրապարակված է հետևյալ կայքում. [https://dotland.github.io/keymanweb-demo-hy/](https://dotland.github.io/keymanweb-demo-hy/):
+&nbsp;&nbsp;&nbsp;&nbsp;Սա վեբ-էջի մի նմուշ է «Armenian Mnemonic» ստեղնաշարը ցուցադրելու համար: Այս վեբ էջը հրապարակված է հետևյալ կայքում. [https://dotland.github.io/keymanweb-demo-hy/](https://dotland.github.io/keymanweb-demo-hy/):
 
 &nbsp;&nbsp;&nbsp;&nbsp;[KeymanWeb](https://keymanweb.com/)-ը վեբի համար՝ բաց կոդով մուտքագրման մեթոդի համակարգ է, որը հասանելի է ինչպես համակարգիչների, այնպես էլ սենսորային սարքերի համար: [KeymanWeb](https://keyman.com/developer/keymanweb/)-ը կարող է ավելացվել ձեր վեբ-կայքում ընդամենը մի քանի տող կոդով:
 
@@ -26,7 +26,7 @@ keyman.addKeyboards({
             source: ['./font/Sylfaen.ttf']
         }
     }, 
-    filename: 'https://github.com/dotland/mnemonic-kb-hy/releases/latest/download/hym.js'
+    filename: 'https://github.com/dotland/mnemonic-kb-hy-/releases/latest/download/hym.js'
 });
 ```
 
